@@ -1,9 +1,13 @@
-import './App.css';
-import Navbar from './Components/Navbar';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import ProductCard from "./Components/ProductCard";
 
 function App() {
   return (
-    <Navbar /> 
+    <>
+      <Navbar />
+      <ProductCard />
+    </>
   );
 }
 export default App;

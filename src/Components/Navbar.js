@@ -5,7 +5,9 @@ function Navbar(){
     return(
     <div className="navbar">  
     <div className="logo">
-      <img src={logo} alt="Company Logo"/>
+      <div className="brinjal">
+        <img src={logo} alt="Company Logo"/>
+      </div>
       <p>escience</p>
     </div>
       <ul>

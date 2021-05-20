@@ -11,6 +11,12 @@ body {
 }
 .logo p {
   margin-left: 15px;
+  font-weight: bold;
+}
+.brinjal {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
 }
 
 .navbar {
@@ -26,6 +32,7 @@ body {
 .navbar ul li {
   display: inline-block;
   padding: 0 10px;
+  font-weight: bold;
 }
 
 .navbar ul li:hover {

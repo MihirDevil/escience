@@ -20,15 +20,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   padding: 1rem 0 1rem 2rem;
 }
 
@@ -42,15 +42,15 @@ nav .categories {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   font-family: "Taviraj", serif;
 }
 
@@ -63,15 +63,15 @@ nav .icons {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 nav .icons svg {
@@ -130,7 +130,7 @@ main .fc-desc .fc-prod-desc {
 }
 
 main .fc-desc .fc-prod-price-title {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 0.5rem 0;
   font-family: "Questrial", sans-serif;
   font-size: 20px;
 }
@@ -145,40 +145,42 @@ main .cart-btn-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   margin: 2rem 0 4.5rem 0;
 }
-
+.cart-btn:hover{
+  cursor: pointer;
+}
 main .cart-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  padding: 1rem;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  padding: 0.5rem;
   background-color: #488fff;
   font-family: "Taviraj", serif;
   border: none;
 }
 
 main .cart-btn p {
-  padding:0 1rem;
+  padding: 0 1rem;
   color: #fff;
   letter-spacing: 2px;
   font-size: 18px;
@@ -199,15 +201,15 @@ main .arrow-btn-right {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   padding: 1rem 1.5rem;
   background-color: #488fff;
   margin-left: 2rem;
@@ -219,15 +221,15 @@ main .arrow-btn-left {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   padding: 1rem 1.5rem;
   background-color: transparent;
   margin-left: 2rem;
@@ -252,16 +254,16 @@ main .monthly-deals .prod-cards-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   margin: 5rem 5rem 5rem 0;
 }
 
@@ -271,28 +273,29 @@ main .monthly-deals .prod-card {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #fff;
   padding: 0 1rem;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  /* transition: 3s ease-out; */
 }
 
 main .monthly-deals .prod-card .prod-img {
   position: relative;
-  top: -40px;
+  top: -20px;
 }
 
 main .monthly-deals .prod-card .prod-name {
   position: relative;
-  top: -40px;
+  top: -15px;
   font-size: 24px;
 }
 
 main .monthly-deals .prod-card .prod-og-price {
   position: relative;
-  top: -40px;
+  top: -15px;
   font-family: "Questrial", sans-serif;
   color: #da1d1d;
 }
@@ -306,26 +309,58 @@ main .monthly-deals .prod-card .prod-price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: -10px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 main .monthly-deals .prod-card .prod-price-wrapper .prod-price {
-  position: relative;
-  top: -20px;
   font-family: "Questrial", sans-serif;
   font-size: 18px;
 }
 
-main .monthly-deals .prod-card .prod-price-wrapper svg {
-  position: relative;
-  top: -20px;
+.prod-card:hover .prod-img{
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.prod-card:hover .cart-wrapper {
+  opacity: 1;
+  height: auto;
+}
+
+.cart-wrapper {
+  display: flex;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 16px;
+  font-family: "Taviraj", serif;
+  background-color: transparent;
+  border: 1px solid #488fff;
+  cursor: pointer;
+}
+.add-to-cart-btn p {
+  margin-left: 8px;
+  color: #488fff;
+}
+.cart-wrapper svg {
+  cursor: pointer;
 }

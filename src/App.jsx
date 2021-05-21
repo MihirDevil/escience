@@ -1,7 +1,7 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import FeaturedCard from "./Components/FeaturedCard";
-import ProductCard from "./Components/ProductCard";
+import Navbar from "./Components/Navbar.jsx";
+import FeaturedCard from "./Components/FeaturedCard.jsx";
+import ProductCard from "./Components/ProductCard.jsx";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <div class="title">Monthly Deals</div>
           <hr />
           <div class="prod-cards-wrapper">
+          <ProductCard/>
           <ProductCard/>
           <ProductCard/>
           <ProductCard/>

@@ -1,75 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 * {
   margin: 0;
   padding: 0;
-  transition: 0.2s ease-in-out;
 }
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+}
+
 body {
-  background-color: #fff4f4;
-}
-.logo {
-  display: flex;
-}
-.logo p {
-  margin-left: 15px;
-  font-weight: bold;
-}
-.brinjal {
-  border-style: solid;
-  border-radius: 5px;
-  border-color: black;
+  background-color: #f7f6f4;
 }
 
-.navbar {
-  background-color: #e7ccc8;
-  padding: 10px 18px;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
-}
-.navbar img {
-  height: 22px;
-}
-.navbar ul li {
-  display: inline-block;
-  padding: 0 10px;
-  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 1rem 0 1rem 2rem;
 }
 
-.navbar ul li:hover {
-  cursor: pointer;
-  color: red;
-  text-decoration: underline;
+nav .web-name {
+  font-size: 30px;
+  letter-spacing: 3px;
 }
 
-.product-card {
+nav .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-  margin: 20px;
-  width: 180px;
-  background-color: #d4d4d4;
-  border-radius: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-family: "Taviraj", serif;
 }
-.product-img {
-  height: 202px;
-  width: 101px;
+
+nav .categories p {
+  padding-left: 2rem;
 }
-.product-name {
-  padding: 10px;
-  font-weight: 800;
+
+nav .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
-.product-footer {
+
+nav .icons svg {
+  padding-left: 2rem;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+main .featured-card-wrapper {
+  overflow: hidden;
+}
+
+main .featured-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: auto;
+  width: 78%;
+  background-color: #d7e6ff;
+}
+
+main .pattern {
+  position: absolute;
+  right: 0px;
+}
+
+main .fc-image {
+  align-self: center;
+  position: relative;
+  left: -60px;
+}
+
+main .fc-desc {
+  font-family: "Taviraj", serif;
+  position: relative;
+  left: -40px;
+  margin: 2rem 0;
+  z-index: 123;
+}
+
+main .fc-desc .fc-prod-name {
+  font-size: 50px;
+}
+
+main .fc-desc hr {
+  width: 35%;
+  border-top: 1px solid black;
+}
+
+main .fc-desc .fc-prod-desc {
+  margin: 1.5rem 12rem 0 0;
+  color: #2e2e2e;
+}
+
+main .fc-desc .fc-prod-price-title {
+  margin: 3rem 0 0 0;
+  font-family: "Questrial", sans-serif;
+  font-size: 20px;
+}
+
+main .fc-desc .fc-prod-price {
+  font-family: "Questrial", sans-serif;
+  font-size: 20px;
+}
+
+main .cart-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 2rem 0 4.5rem 0;
+}
+
+main .cart-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 1rem;
+  background-color: #488fff;
+  font-family: "Taviraj", serif;
+  border: none;
+}
+
+main .cart-btn p {
+  padding:0 1rem;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+main .arrow-btns-wrapper {
+  z-index: 123;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -25px;
+  right: 30px;
+}
+
+main .arrow-btn-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 1rem 1.5rem;
+  background-color: #488fff;
+  margin-left: 2rem;
+  border: none;
+}
+
+main .arrow-btn-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  margin-left: 2rem;
+  border: 1px solid #488fff;
+}
+
+main .monthly-deals {
+  font-family: "Taviraj", serif;
+  margin: 4rem 3rem;
+}
+
+main .monthly-deals .title {
+  font-size: 48px;
+}
+
+main .monthly-deals hr {
+  width: 12%;
+  border: 1px solid black;
+}
+
+main .monthly-deals .prod-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 5rem 5rem 5rem 0;
+}
+
+main .monthly-deals .prod-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fff;
-  width: 100%;
-  border-radius: 0 0 12px 12px;
+  padding: 0 1rem;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
-.product-footer div {
+
+main .monthly-deals .prod-card .prod-img {
+  position: relative;
+  top: -40px;
+}
+
+main .monthly-deals .prod-card .prod-name {
+  position: relative;
+  top: -40px;
+  font-size: 24px;
+}
+
+main .monthly-deals .prod-card .prod-og-price {
+  position: relative;
+  top: -40px;
+  font-family: "Questrial", sans-serif;
+  color: #da1d1d;
+}
+
+main .monthly-deals .prod-card .prod-og-price span {
+  text-decoration: line-through;
+  color: #858585;
+}
+
+main .monthly-deals .prod-card .prod-price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
-.product-price {
-  margin-right: 20px;
+
+main .monthly-deals .prod-card .prod-price-wrapper .prod-price {
+  position: relative;
+  top: -20px;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+}
+
+main .monthly-deals .prod-card .prod-price-wrapper svg {
+  position: relative;
+  top: -20px;
 }

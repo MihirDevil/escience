@@ -55,7 +55,11 @@ nav .categories {
 }
 
 nav .categories p {
-  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+nav .categories p:hover {
+  cursor: pointer;
 }
 
 nav .icons {
@@ -75,7 +79,11 @@ nav .icons {
 }
 
 nav .icons svg {
-  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+nav .icons svg:hover {
+  cursor: pointer;
 }
 
 main {

@@ -120,7 +120,7 @@ main .fc-desc {
   position: relative;
   left: -40px;
   margin: 2rem 0;
-  z-index: 123;
+  z-index: 12;
 }
 
 main .fc-desc .fc-prod-name {
@@ -195,7 +195,7 @@ main .cart-btn p {
 }
 
 main .arrow-btns-wrapper {
-  z-index: 123;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,14 +246,14 @@ main .arrow-btn-left {
 
 main .monthly-deals {
   font-family: "Taviraj", serif;
-  margin: 4rem 3rem;
+  margin: 4rem 0 0 3rem;
 }
 
-main .monthly-deals .title {
+main .title {
   font-size: 48px;
 }
 
-main .monthly-deals hr {
+main hr {
   width: 12%;
   border: 1px solid black;
 }
@@ -272,7 +272,7 @@ main .monthly-deals .prod-cards-wrapper {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin: 5rem 5rem 5rem 0;
+  margin: 0 5rem 5rem 0;
 }
 
 main .monthly-deals .prod-card {
@@ -292,18 +292,15 @@ main .monthly-deals .prod-card {
 
 main .monthly-deals .prod-card .prod-img {
   position: relative;
-  top: -20px;
+  bottom: 20px;
+  margin-bottom: -20px;
 }
 
 main .monthly-deals .prod-card .prod-name {
-  position: relative;
-  top: -15px;
   font-size: 24px;
 }
 
 main .monthly-deals .prod-card .prod-og-price {
-  position: relative;
-  top: -15px;
   font-family: "Questrial", sans-serif;
   color: #da1d1d;
 }
@@ -317,8 +314,6 @@ main .monthly-deals .prod-card .prod-price-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  top: -10px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -333,6 +328,7 @@ main .monthly-deals .prod-card .prod-price-wrapper {
 
 main .monthly-deals .prod-card .prod-price-wrapper .prod-price {
   font-family: "Questrial", sans-serif;
+  margin-top: 8px;
   font-size: 18px;
 }
 
@@ -343,11 +339,12 @@ main .monthly-deals .prod-card .prod-price-wrapper .prod-price {
 .prod-card:hover .cart-wrapper {
   opacity: 1;
   height: auto;
+  margin-top: 8px;
 }
 
 .cart-wrapper {
   display: flex;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 1.0s ease-out;
   opacity: 0;
   height: 0;
   overflow: hidden;

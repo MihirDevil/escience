@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,MAAM,AAAC,CACH,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,QAAQ,CAAE,KAAK,CACf,OAAO,CAAE,GAAG,CACZ,IAAI,CAAE,CAAC,CACP,GAAG,CAAE,CAAC,CACN,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,eAAkB,CACvC,AACD,AAAA,gBAAgB,AAAA,CACd,gBAAgB,CAAE,OAAO,CAC1B",
+    "sources": [
+        "../../src/Better.scss"
+    ],
+    "names": [],
+    "file": "Better.css"
+}

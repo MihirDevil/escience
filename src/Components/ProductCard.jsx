@@ -11,7 +11,7 @@ function ProductCard() {
     setFill("#D10000");
   }
   return (
-    <div class="prod-card">
+    <div class="prod-card" style={{marginTop: '6rem'}}>
       <img src={Elon} alt="product-image" class="prod-img" />
       <div class="prod-name">Elon Musk</div>
       <div class="prod-og-price">
